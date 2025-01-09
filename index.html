@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
     <link rel="stylesheet" href="/src/css/fonts.css">
-    <link rel="stylesheet" href="/src/css/media.css">
+    
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/media.css">
 </head>
 <body>
     <div class="section">
         <div class="header">
             <nav class="header__inner">
 
-                <button class="header__menu header__inner--round">
+                <button class="header__menu header__inner--round firstpage__menu--desk">
                     <div class="header__menu--line"></div>
                     <div class="header__menu--mini"></div>
                     <div class="header__menu--medium"></div>
                 </button>
 
-                <div class="header__separator header__inner-none"></div>
+                <div class="header__separator header__inner-none firstpage__menu--desk"></div>
 
-                <a href="#" class="header__logo">
+                <a href="#" class="header__logo firstpage__menu--desk">
                     <img src="/src/icons/logo.png" alt="Company logo" class="header__logo-image">
                 </a>
 
@@ -48,8 +49,17 @@
 
     <div class="section">
         <div class="firstpage">
-                <div class="firstpage__line"></div>
-                <h1 class="firstpage__header">Услуги и сервисы</h1>
+                
+                <div class="firstpage__header">
+                    <div class="firstpage__line"></div>
+                    <h1 class="firstpage__header--h1">Услуги и сервисы</h1>
+                    <div class="firstpage__header--btn">
+                        <button class="header__settings header__inner--round firstpage__header--desk"> 
+                            Оставить заявку</button>
+                        <button class="header__search header__inner--round firstpage__header--desk">
+                            Статус ремонта</button>
+                    </div>
+                </div>
                 <ul class="firstpage__menu">
                     <li><a href="#" class="firstpage__menu--brand">Ремонтируемые бренды</a></li>
                     <li><a href="#" class="firstpage__menu--devices firstpage__menu--brand">Ремонтируемые устройства</a></li>

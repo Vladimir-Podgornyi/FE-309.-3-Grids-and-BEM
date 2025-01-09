@@ -154,14 +154,18 @@
     border-radius: 0 20px 20px 0;
     
 } 
-.firstpage__header {
+.firstpage__header--h1 {
     font-weight: 700;
     font-size: 28px;
     color: #1b1c21;
-    display: block;
+    display: inline-block;
     height: 40px;
     margin-bottom: 24px;
     margin-left: 12px;
+}
+
+.firstpage__header--desk {
+    display: none;
 }
 
 
@@ -187,9 +191,7 @@
     background: #f8f8f8;
     text-decoration: none;
     list-style: none;
-    color: #000;
-    text-decoration: none;
-    appearance: none;
+    color: black;
     opacity: 0.5;
 }
     
