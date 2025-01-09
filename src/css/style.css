@@ -24,6 +24,11 @@
             background: #ff3e79;
             border: none;
             cursor: pointer;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        .header__inner--round:active {
+            background: #f00048;
+            transition: 0.2s;
         }
         .header__menu {
             display: flex;
@@ -196,6 +201,7 @@
 
 .firstpage__text {
     margin: 24px 16px;
+    width: 288px;
 }
 .firstpage__text-visible {
     font-weight: 400;

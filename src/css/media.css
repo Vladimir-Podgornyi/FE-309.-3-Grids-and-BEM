@@ -14,14 +14,35 @@
     .firstpage {
         width: 100%;
     }
+    .firstpage__text{
+        width: 312px;
+    }
+    .firstpage__inner {
+        display: flex;
+        justify-content: space-around;
+        margin: 24px 16px;
+    }
+    .firstpage__text {
+        margin: 0;
+    }
+    .firstpage__text-tablet {
+        display: block;
+    }
+    .furstpage__text-mobile {
+        display: none;
+    }
+    .firstpage__img {
+        width: 360px;
+        height: 208px;  
+    }
    /*  .firstpage__text {
         display: inline-block;
         width: 312px;
     }
    .firstpage__img {
     float: right;
-   }
-} */
+   } */
+} 
 
 
 
@@ -35,5 +56,24 @@
 
     .firstpage {
         width: 320px;
+    }
+
+    .firstpage__inner {
+        display: block;
+        margin: 0 auto;
+        width: 320px;
+    }
+    .firstpage__text {
+        margin: 24px 16px;
+    }
+    .firstpage__text-tablet {
+        display: none;
+    }
+    .furstpage__text-mobile {
+        display: inline;
+
+    }
+    .firstpage__img {
+        width: 100%; 
     }
 }
