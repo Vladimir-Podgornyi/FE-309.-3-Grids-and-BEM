@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    font-family: 'TT Lakes';
+}
+
+
+.header {
+    width: 320px;
+}
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+    }
+
+        .header__inner--round {
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            background: #ff3e79;
+            border: none;
+            cursor: pointer;
+        }
+        .header__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 5px;
+            align-items: center;
+        }
+        .header__menu--line::before {
+            content: "";
+            display: flex;
+            row-gap: 20px;
+
+            border-radius: 1px;
+            width: 18px;
+            height: 2px;
+            background: #fff;
+        }
+
+        .header__menu--mini::before {
+            content: "";
+            display: flex;
+            margin-right: 8px;
+
+            border-radius: 1px;
+            width: 10px;
+            height: 2px;
+            background: #fff;
+        }
+
+        .header__menu--medium::before {
+            content: "";
+            display: flex;
+            margin-right: 5px;
+
+            border-radius: 1px;
+            width: 14px;
+            height: 2px;
+            background: #fff;
+        }
+
+        .header__logo {
+            display: block;
+            transition: none;
+        }
+
+        .header__logo-image {
+            width: 96px;
+            height: 50px;
+        }
+
+        .header__separator::before {
+            content: "";
+            display: block;
+            border-radius: 1px;
+            width: 2px;
+            height: 32px;
+            background: #eaeaea;
+        }
+
+        .header__settings::before {
+            content:url(../icons/settings.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
+
+        .header__search::before {
+            content:url(../icons/search.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
+    .header__underline {
+        width: 100%;
+        height: 1px;
+        background: #d9fff5;
+    }
+
+
+
+
+.firstpage {
+    position: relative;
+    width: 320px;
+    height: 509px;
+    background: #f8f8f8;
+    padding-top: 24px;
+}
+
+
+
+.firstpage__line::before {
+    content:"";
+    position: absolute;
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background-color: #41f6d7;
+    border-radius: 0 20px 20px 0;
+    
+} 
+.firstpage__header {
+    font-weight: 700;
+    font-size: 28px;
+    color: #1b1c21;
+    display: block;
+    height: 40px;
+    margin-bottom: 24px;
+    margin-left: 12px;
+}
+
+
+.firstpage__menu {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0 16px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #7e7e82;
+    padding: 0;
+    list-style-type: none;
+}
+
+.firstpage__menu--brand {
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center;
+    padding: 8px 16px;
+    border: none;
+    background: #f8f8f8;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    appearance: none;
+    opacity: 0.5;
+}
+    
+.firstpage__menu--brand:hover{
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.firstpage__text {
+    margin: 24px 16px;
+}
+.firstpage__text-visible {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1b1c21;
+    }
+    details {
+        margin-top: 16px;
+        
+    }
+
+    summary {
+        list-style: none; /* Убираем стандартный маркер */
+        outline: none;
+        
+      
+    }
+
+    summary::marker {
+        display: none; /* Убираем стандартный треугольник */
+        
+    }
+
+    details[open] .firstpage__open {
+        display: none; /* Скрываем текст кнопки, когда раскрыто */
+        transition: transform 0.4s;
+    }
+
+    .firstfage__details {
+        padding-right: 8px;
+        transition: transform 0.4s;
+    }
+
+
+    details[open] .firstfage__details{
+        transform: rotate(180deg);
+        transition: transform 0.4s ease;
+    }
+    
+    .firstpage__open {
+        font-weight: 500;
+        font-size: 16px;
+        color: #1b1c21;
+    }
+
+.firstpage__text-full {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1b1c21;
+    }
+
