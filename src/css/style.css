@@ -5,8 +5,9 @@
 
 
 .header {
-    width: 320px;
+    min-width: 320px;
 }
+
 
     .header__inner {
         display: flex;
@@ -74,6 +75,8 @@
             height: 50px;
         }
 
+
+
         .header__separator::before {
             content: "";
             display: block;
@@ -81,6 +84,27 @@
             width: 2px;
             height: 32px;
             background: #eaeaea;
+        }
+
+        .header__phone::before {
+            content:url(../icons/tel.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
+
+        .header__chat::before {
+            content:url(../icons/chat.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
+
+        .header__accaunt::before {
+            content:url(../icons/accaunt.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
         }
 
         .header__settings::before {
@@ -107,7 +131,7 @@
 
 .firstpage {
     position: relative;
-    width: 320px;
+    min-width: 320px;
     height: 509px;
     background: #f8f8f8;
     padding-top: 24px;

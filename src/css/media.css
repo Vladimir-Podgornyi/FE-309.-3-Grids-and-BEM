@@ -1,0 +1,39 @@
+
+
+@media (max-width: 768px) {
+    .header {
+       width: 100%;
+    }
+    .header__inner-none {
+        display: block;
+    }
+    .header__logo-image {
+        margin-right: 245px;
+    }
+
+    .firstpage {
+        width: 100%;
+    }
+   /*  .firstpage__text {
+        display: inline-block;
+        width: 312px;
+    }
+   .firstpage__img {
+    float: right;
+   }
+} */
+
+
+
+@media (max-width: 320px) {
+    .header__inner-none {
+        display: none;
+    }
+    .header__logo-image {
+        margin-right: 0;
+    }
+
+    .firstpage {
+        width: 320px;
+    }
+}
