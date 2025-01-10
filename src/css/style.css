@@ -18,6 +18,7 @@
     }
 
         .header__inner--round {
+            position: relative;
             border-radius: 20px;
             width: 40px;
             height: 40px;
@@ -83,6 +84,7 @@
 
 
         .header__separator::before {
+            position: absolute;
             content: "";
             display: block;
             border-radius: 1px;
@@ -92,6 +94,8 @@
         }
 
         .header__phone::before {
+            position: absolute;
+            padding-left: 4px;
             content:url(../icons/tel.svg);
             display: block;
             margin: 0 auto;
@@ -99,6 +103,8 @@
         }
 
         .header__chat::before {
+            position: absolute;
+            padding-left: 4px;
             content:url(../icons/chat.svg);
             display: block;
             margin: 0 auto;
@@ -106,6 +112,8 @@
         }
 
         .header__accaunt::before {
+            position: absolute;
+            padding-left: 4px;
             content:url(../icons/accaunt.svg);
             display: block;
             margin: 0 auto;
@@ -113,10 +121,12 @@
         }
 
         .header__settings::before {
+            position: absolute;
+            padding-left: 4px;
             content:url(../icons/settings.svg);
             display: block;
-            margin: 0 auto;
-            padding-top: 4px;
+            top: 10px;
+            text-align: center;
         }
 
         .header__search::before {
@@ -180,7 +190,10 @@
     color: #7e7e82;
     padding: 0;
     list-style-type: none;
+    
 }
+
+
 
 .firstpage__menu--brand {
     display: flex; /* Включаем Flexbox */
@@ -193,12 +206,16 @@
     list-style: none;
     color: black;
     opacity: 0.5;
+    cursor: default;
+    border: 2px solid transparent;
 }
+
+
     
 .firstpage__menu--brand:hover{
-    border: 2px solid #b8ffec;
-    border-radius: 6px;
-    background-color: #fff;
+    border:2px solid #b8ffec;
+    
+    
 }
 
 .firstpage__text {
@@ -232,13 +249,13 @@
         transition: transform 0.4s;
     }
 
-    .firstfage__details {
+    .firstpage__details {
         padding-right: 8px;
         transition: transform 0.4s;
     }
 
 
-    details[open] .firstfage__details{
+    details[open] .firstpage__details{
         transform: rotate(180deg);
         transition: transform 0.4s ease;
     }

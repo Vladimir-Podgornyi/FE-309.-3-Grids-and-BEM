@@ -14,7 +14,7 @@
     }
 
     .firstpage__header {
-        display: block;
+        
     }
     
     .firstpage__header--btn {
@@ -23,15 +23,13 @@
         top: 24px;
     }
 
-    .header__settings::before {
-       padding-top: 9px;
-    }
-    .header__search::before {
-        padding-top: 9px;
-    }
+  
     .firstpage__btn {
         border: none;
         background: none;
+        display: absolute;
+        align-items: center;
+
         
     }
     .firstpage__menu {
@@ -44,7 +42,6 @@
     .firstpage__btn-text {
         font-weight: 500;
         margin-right: 8px;
-        align-items: start;
     }
 
     .firstpage__inner {
@@ -112,11 +109,22 @@
     .header__end-set{
         display: flex;
         justify-content: flex-end;
-        align-items: center;
         gap: 16px;
         padding: 16px;
     }
 
+    .header__phone::before {
+        position: relative;
+        padding-left: 0;
+    }
+    .header__chat::before {
+        position: relative;
+        padding-left: 0; 
+    }
+    .header__accaunt::before {
+        position: relative;
+        padding-left: 0; 
+    }
     .firstpage {
         width: 100%;
     }
@@ -128,6 +136,9 @@
         overflow-x: auto;
         white-space: nowrap;
         flex-wrap: nowrap;
+    }
+    .header__separator::before {
+        position: relative;
     }
     .firstpage__header--desk {
         display:none;
