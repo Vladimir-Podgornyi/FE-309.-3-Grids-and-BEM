@@ -1,0 +1,126 @@
+@media (min-width: 320px) {
+   
+   
+    .header__separator--tabletOn {
+        display: none;
+    }
+
+    .header__menu--tablet {
+        display: none;
+    }
+    
+    .firstpage__text--tablet-img {
+        padding-top: 16px;
+    }
+    .firstpage__menu-right{
+        display: none;
+    }
+    .firstpage__text-visible-tablet {
+        display: none;
+        font-size: 14px;
+    }
+    .firstpage__text-visible-desc {
+        display: none;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .header__separator--tabletOn {
+        display: block;
+    }
+
+    .header__menu--tablet {
+        display: flex;
+        gap: 16px;
+    }
+
+    .header__menu--mobile-tablet {
+        gap: 30px;
+    }
+
+
+    .firstpage__menu-right{
+        display: none;
+    }
+    .firstpage__text {
+        display: flex;
+        padding-top: 20px;
+    }
+    .firstpage__text--tablet {
+        min-width: 312px;
+    }
+    .firstpage__text-visible-tablet {
+        display: block;
+    }
+    .firstpage__text-visible-desc {
+        display: none;
+    }
+    .firstpage__text--tablet-img {
+        width: 100%;
+        height: auto;
+        padding-left: 48px;
+    }
+
+    .firstpage__text--tablet-img {
+        padding-top: 0;
+    }
+
+    .firstpage__text-notvisible {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+    .firstpage {
+        padding: 0 20px 0 20px;
+    }
+    .firstpage__line{
+        position: absolute;
+        left: 0;
+    }
+    .firstpage__text {
+       padding-top: 0;
+    }
+    .firstpage__text--tablet {
+        max-width: 490px;
+    }
+    .firstpage__text-visible-tablet {
+        display: none;
+    }
+    .firstpage__text-visible-desc {
+        display: block;
+    }
+    .firstpage__menu {
+        flex-wrap: wrap
+    }
+    .fistpage__menu--desc{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .firstpage__menu--desc-right {
+        display: flex;
+        gap: 16px;
+    }
+    .firstpage__menu-right{
+        display: block;
+        
+    }
+    .firstpage__menu-set{
+        display: inline-block;
+        align-items: center;
+        padding-right: 32px ;
+    }
+    .firstpage__menu-set-text {
+        padding-right: 8px;
+    }
+
+}

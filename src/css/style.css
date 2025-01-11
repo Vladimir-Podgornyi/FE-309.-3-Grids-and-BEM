@@ -5,7 +5,7 @@
 
 
 .header {
-    width: 320px;
+    width: 100%;
 }
 
     .header__inner {
@@ -31,6 +31,14 @@
             row-gap: 5px;
             align-items: center;
         }
+
+        .header__menu--mobile-tablet {
+            display: none;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
         .header__menu--line::before {
             content: "";
             display: flex;
@@ -89,6 +97,24 @@
             margin: 0 auto;
             padding-top: 4px;
         }
+        .header__phone::before {
+            content:url(../icons/phone.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
+        .header__chat::before {
+            content:url(../icons/chat.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
+        .header__accaunt::before {
+            content:url(../icons/accaunt.svg);
+            display: block;
+            margin: 0 auto;
+            padding-top: 4px;
+        }
 
         .header__search::before {
             content:url(../icons/search.svg);
@@ -107,7 +133,7 @@
 
 .firstpage {
     position: relative;
-    width: 320px;
+    width: 100%;
     height: 509px;
     background: #f8f8f8;
     padding-top: 24px;
@@ -150,8 +176,8 @@
 }
 
 .firstpage__menu--brand {
-    display: flex; /* Включаем Flexbox */
-    justify-content: center; /* Горизонтальное центрирование */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
     padding: 8px 16px;
     border: none;
@@ -163,11 +189,13 @@
     appearance: none;
     opacity: 0.5;
 }
-    
-.firstpage__menu--brand:hover{
-    border: 2px solid #b8ffec;
+.firstfage__menu--brand {
+    border: 2px solid none;
     border-radius: 6px;
     background-color: #fff;
+}
+.firstpage__menu--brand:hover{
+    border: 2px solid #b8ffec;
 }
 
 .firstpage__text {
@@ -178,6 +206,10 @@
     font-size: 14px;
     color: #1b1c21;
     }
+   
+   
+   
+    
     details {
         margin-top: 16px;
         
@@ -217,9 +249,14 @@
         color: #1b1c21;
     }
 
-.firstpage__text-full {
-    font-weight: 400;
-    font-size: 14px;
-    color: #1b1c21;
+    .firstpage__text-full {
+        font-weight: 400;
+        font-size: 14px;
+        color: #1b1c21;
+        }
+    .firstpage__img {
+        width: 100%;
+        height: auto;
     }
+
 

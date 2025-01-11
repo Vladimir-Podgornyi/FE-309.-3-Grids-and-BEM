@@ -4,30 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
-    <link rel="stylesheet" href="/src/css/fonts.css">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/media.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <div class="section">
         <div class="header">
             <nav class="header__inner">
 
-                <button class="header__menu header__inner--round">
-                    <div class="header__menu--line"></div>
-                    <div class="header__menu--mini"></div>
-                    <div class="header__menu--medium"></div>
-                </button>
+                <div class="header__menu--mobile-tablet">
+                    <button class="header__menu header__inner--round">
+                        <div class="header__menu--line"></div>
+                        <div class="header__menu--mini"></div>
+                        <div class="header__menu--medium"></div>
+                    </button>
+    
+                    <div class="header__separator header__separator--tabletOn"></div>
+    
+                    <a href="#" class="header__logo">
+                        <img src="/src/icons/logo.png" alt="Company logo" class="header__logo-image">
+                    </a>
+                </div>
 
-                <a href="#" class="header__logo">
-                    <img src="/src/icons/logo.png" alt="Company logo" class="header__logo-image">
-                </a>
+                
+                <div class="header__menu--mobile-tablet">
 
-                <div class="header__separator"></div>
 
-                <button class="header__settings header__inner--round"> 
-                </button>
-                <button class="header__search header__inner--round">
-                </button>
+                <div class="header__menu--tablet">
+
+                    <button class="header__phone header__inner--round"> 
+                    </button>
+                    <button class="header__chat header__inner--round"> 
+                    </button>
+                    <button class="header__accaunt header__inner--round"> 
+                    </button>
+                    
+                </div>
+                
+                    <div class="header__separator"></div>
+
+                    <button class="header__settings header__inner--round"> 
+                    </button>
+                    <button class="header__search header__inner--round">
+                    </button>
+                </div>
             </nav>
             <div class="header__underline"></div>
         </div>
@@ -37,27 +58,70 @@
 
     <div class="section">
         <div class="firstpage">
-                <div class="firstpage__line"></div>
-                <h1 class="firstpage__header">Услуги и сервисы</h1>
+                
+           <div class="fistpage__menu--desc">
+
+
+                <div class="firstpage__menu--desc-left">
+                    <div class="firstpage__menu--left">
+                        <div class="firstpage__line"></div>
+                        <h1 class="firstpage__header">Услуги и сервисы</h1>
+                    </div>
+                </div>
+
+                <div class="firstpage__menu--desc-right">
+                    <div class="firstpage__menu-right">
+                        <div class="firstpage__menu-set">
+                            <span class="firstpage__menu-set-text">Оставить заявку</span>
+                            <button class="header__settings header__inner--round"> 
+                            </button>
+                        </div>
+                        <div class="firstpage__menu-set">
+                            <span class="firstpage__menu-set-text">Статус ремонта</span>
+                            <button class="header__search header__inner--round">
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+                
+           </div>
+
                 <ul class="firstpage__menu">
+                    
+                    
                     <li><a href="#" class="firstpage__menu--brand">Ремонтируемые бренды</a></li>
                     <li><a href="#" class="firstpage__menu--devices firstpage__menu--brand">Ремонтируемые устройства</a></li>
                     <li><a href="#" class="firstpage__menu--price firstpage__menu--brand">Ценына услуги</a></li>
                     <li><a href="#" class="firstpage__menu--address firstpage__menu--brand">Адреса сервисных центров</a></li>
                     <li><a href="#" class="firstpage__menu--discount firstpage__menu--brand">Специальные цены</a></li>
+                    <li><a href="#" class="firstpage__menu--revies firstpage__menu--brand">Отзывы</a></li>
                 </ul>
 
             <article class="firstpage__text">
-                <span class="firstpage__text-visible">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</span>
+                <div class="firstpage__text--tablet">
+                    <span class="firstpage__text-visible">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </span>
+                    <span class="firstpage__text-visible-tablet"><br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,</span>
+                    
+                    <span class="firstpage__text-visible-desc">
+                        <br> <br> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                            что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </span>
                     <details>
                         <summary>
-                            <img src="/src/icons/details.svg" alt="opne details" class="firstfage__details">
+                            <img src="src/icons/details.svg" alt="opne details" class="firstfage__details">
                             <span class="firstpage__open">Читать далее</span>
                         </summary>
-                            <span class="firstpage__text-full">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                            <span class="firstpage__text-full"><span class="firstpage__text-notvisible">
+                                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                            </span> что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                     </details>
+                </div>
+                    <div class="firstpage__text--tablet-img">
+                        <img src="src/img/Picture Copy.jpg" alt="" class="firstpage__img">
+                    </div>
             </article>
-            <img src="/src/img/Picture Copy.jpg" alt="" class="firstpage__img">
+            
         </div>
         </div>
     </div>
