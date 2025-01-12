@@ -16,7 +16,7 @@ body {
         align-items: center;
         gap: 16px;
         padding: 16px;
-        background: fff;
+        background: #fff;
     }
 
         .header__inner--round {
@@ -26,6 +26,7 @@ body {
             background: #ff3e79;
             border: none;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
         }
         .header__menu {
             display: flex;
@@ -39,6 +40,10 @@ body {
             display: none;
             display: flex;
             gap: 16px;
+            align-items: center;
+        }
+        .header__menu--mobile-handy {
+            display: flex;
             align-items: center;
         }
 
@@ -83,6 +88,7 @@ body {
         .header__logo-image {
             width: 96px;
             height: 50px;
+            
         }
 
         .header__separator::before {
@@ -191,14 +197,21 @@ body {
     text-decoration: none;
     appearance: none;
     opacity: 0.5;
+    -webkit-tap-highlight-color: transparent;
 }
 .firstfage__menu--brand {
-    border: 2px solid none;
+    border: 2px solid #fff;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: #fff; 
+
 }
 .firstpage__menu--brand:hover{
     border: 2px solid #b8ffec;
+    padding: 6px 14px;
+}
+.firstpage__menu--brand:active{
+    border: 2px solid #b8ffec;
+    padding: 6px 14px;
 }
 
 .firstpage__text {
@@ -213,10 +226,7 @@ body {
    
    
     
-    details {
-        margin-top: 16px;
-        
-    }
+    
 
     summary {
         list-style: none; /* Убираем стандартный маркер */
@@ -229,24 +239,20 @@ body {
         display: none; /* Убираем стандартный треугольник */
         
     }
-
-    details[open] .firstpage__open {
-        display: none; /* Скрываем текст кнопки, когда раскрыто */
-        transition: transform 0.4s;
-    }
-
     .firstfage__details {
         padding-right: 8px;
         transition: transform 0.4s;
     }
 
-
-    details[open] .firstfage__details{
-        transform: rotate(180deg);
-        transition: transform 0.4s ease;
+    .firstpage__readmore-btn {
+        display: block;
+        margin-top: 20px;
+        border: none;
+        background: none;
     }
-    
+
     .firstpage__open {
+        
         font-weight: 500;
         font-size: 16px;
         color: #1b1c21;
@@ -261,6 +267,7 @@ body {
         width: 100%;
         height: auto;
     }
+    
     
 
 
