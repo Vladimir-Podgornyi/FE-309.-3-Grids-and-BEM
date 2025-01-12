@@ -92,6 +92,9 @@
     .firstpage__text--tablet {
         max-width: 490px;
     }
+    .firstpage__text--tablet-img {
+        max-width: 531px;
+    }
     .firstpage__text-visible-tablet {
         display: none;
     }
