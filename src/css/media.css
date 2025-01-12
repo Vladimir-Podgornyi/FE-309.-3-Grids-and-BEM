@@ -27,6 +27,11 @@
     
 }
 
+@media (min-width: 460px) {
+    .header__menu--tablet {
+        display: block;
+    }
+}
 
 @media (min-width: 768px) {
     .header__separator--tabletOn {
